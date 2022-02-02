@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BloomMKTG Register and Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/register2.css'%}">
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<body>
+<div class="cotn_principal">
+  <div class="cont_centrar">
+    <div class="cont_login">
+      <div class="cont_info_log_sign_up">
+        <div class="col_md_login">
+          <div class="cont_ba_opcitiy">
+            <h2>LOGIN</h2>
+            <p>Login if you have an account, and then enjoy our service.</p>
+            <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+          </div>
+        </div>
+        <div class="col_md_sign_up">
+          <div class="cont_ba_opcitiy">
+            <h2>SIGN UP</h2>
+            <p>Sign up if you want to try something new.</p>
+            <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+      <div class="cont_back_info">
+        <div class="cont_img_back_grey"> <img src="{% static '/img/po.jpeg' %}" alt="" /> </div>
+      </div>
+      <div class="cont_forms" >
+        <div class="cont_img_back_"> <img src="{% static '/img/po.jpeg' %}" alt="" /> </div>
+        <div class="cont_form_login"> <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+          <h2>LOGIN</h2>
+          <input type="text" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+        </div>
+        <div class="cont_form_sign_up"> <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+          <h2>SIGN UP</h2>
+            <input type="text" placeholder="User" />
+          <input type="text" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Confirm Password" />
+          <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script rel="stylesheet" type="text/javascript" src="{% static '/js/register2.js'%}"></script>
+
+</body>
+
+</body>
+</html>
